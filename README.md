@@ -2,9 +2,16 @@
 A simple reverse shell with stdin/stdout
 
 ```
-    __H__Y__D__R__A_________
-    v.1.0.5.0      SuperMalc
+        REVERSE SHELL TCP MULTICLIENT
+        * Server: Rel.1.0.3.1 - 02/08/2023
+        * Autore: Malcolm Mami (SuperMalc)
 
-('[07/05/2022 14:23:47] server in ascolto ', '0.0.0.0', ':', 8080)
-[+] In attesa di connessioni in arrivo [Ctrl] + [Alt] ---> [selettore client]
+ # Server in fase di avvio:
+
+ > Controllo su avvio modulo ws2 -->OK
+ > Generazione socket di ascolto -->OK
+ > Controllo binding su indirizzo e porta -->OK
+ > Inizializzazione ascolto -->OK
+
+ # Server avviato: in attesa di connessioni in arrivo, porta: 8888
 ```
