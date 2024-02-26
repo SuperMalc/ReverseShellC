@@ -1,5 +1,6 @@
-## Simple reverse shell multiclient - winsock2 - c
-A simple multiclient reverse shell written in c with winsocks2 library
+## Multiclient reverse shell - winsock2
+A simple multiclient reverse shell written in C with Winsocks2 library
+[Compiled with Dev-C + + 5.11]
 
 Server side:
 ```
