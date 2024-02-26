@@ -1,7 +1,7 @@
 /*
 	*	*	*	*	*	*	*	*	*	*	*	*	*
 	*	*	*	*	*	*	*	*	*	*	*	*	*
-	*   H   Y   D   R   A   B   O   T   N   E   T   *
+	*	*	*	*	*	*	*
 	*   * Multiclient TCP Reverse shell 1.0.3.1 *   *
 	*	*	*	*	*	*	*	*	*	*	*	*	*
 	*   Scritto in C & test eseguiti Dev-C 5.11 *   *
