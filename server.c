@@ -91,7 +91,7 @@ int main()
 	// *   *   *   *   *   *   *   *   *   *   *   *   *   *   *
 	void loadManifest()
 	{
-		printf("\tH Y D R A B O T N E T\n\t* Server: Rel.1.0.3.1 - 02/08/2023\n\t* Autore: Malcolm Mami (SuperMalc)\n");
+		printf("\tREVERSE SHELL TCP MULTICLIENT\n\t* Server: Rel.1.0.3.1 - 02/08/2023\n\t* Autore: Malcolm Mami (SuperMalc)\n");
 	}	
 	
 	char send_command(char *auth_msg, SOCKET new_socket)
