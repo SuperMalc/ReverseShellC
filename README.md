@@ -1,6 +1,7 @@
 ## Simple reverse shell multiclient - winsock2 - c
-A simple reverse shell with stdin/stdout
+A simple multiclient reverse shell written in c with winsocks2 library
 
+Server side:
 ```
         REVERSE SHELL TCP MULTICLIENT
         * Server: Rel.1.0.3.1 - 02/08/2023
@@ -15,3 +16,5 @@ A simple reverse shell with stdin/stdout
 
  # Server avviato: in attesa di connessioni in arrivo, porta: 8888
 ```
+
+Client side:
