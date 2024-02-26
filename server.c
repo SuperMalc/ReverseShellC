@@ -178,7 +178,7 @@ int main()
 			gets(number);
 			select = atoi(number);
 			
-			// controllo se il numero inserito è valido (se presente nell'array)		
+			// controllo se il numero inserito Ã¨ valido (se presente nell'array)		
 			if (select <= (item - 1))
 			{
 				// Client valido
@@ -218,13 +218,13 @@ int main()
 						// Add a NULL terminating character to make it a proper string before printing
 						client_reply[recv_size] = '\0';
 											
-						// Ora controllo se il messaggio di autenticazione ricevuto dal client è corretto
+						// Ora controllo se il messaggio di autenticazione ricevuto dal client Ã¨ corretto
 						if (startsWith(client_reply, AUTH_MSG))
 						{
 							// Applico un puntatore alla variabile messaggio ricevuto
 							char *msg_display = client_reply;						
 							
-							// Rimuovo i primi 16 caratteri di autenticazione (non ci interessano più) per ottenere il percorso di lavoro
+							// Rimuovo i primi 16 caratteri di autenticazione (non ci interessano piÃ¹) per ottenere il percorso di lavoro
 							msg_display += 16;
 							char *working_path;
 							working_path = strstr(msg_display, SPLITTER);
@@ -234,12 +234,12 @@ int main()
 							length = strlen(working_path); 
 							msg_display[strlen(msg_display)-(length+8)] = '\0';
 							
-							// Dichiaro che la connessione è stata stabilita con successo
+							// Dichiaro che la connessione Ã¨ stata stabilita con successo
 							printf("\n > Connessione stabilita con: %s", msg_display);
 							// Informo sul percorso di lavoro del client nella shell
 							printf("\n > Percorso: %s", working_path);						
 													
-							// Devo avvisare il client che l'autenticazione si è CONCLUSA [END_AUTH_MSG]
+							// Devo avvisare il client che l'autenticazione si Ã¨ CONCLUSA [END_AUTH_MSG]
 							send(new_socket, END_AUTH_MSG, strlen(END_AUTH_MSG), 0);
 							
 							// Avvio del loop di comunicazione con il client
@@ -331,7 +331,7 @@ int main()
 	
 	int status = WSAStartup(MAKEWORD(2, 2), &wsa);
 	// Controllo avvio modulo winsock2
-	// ws2_32.lib è il file della libreria || ws2_32.dll è il file DLL	
+	// ws2_32.lib Ã¨ il file della libreria || ws2_32.dll Ã¨ il file DLL	
 	if (status != 0)	
 	{
 		printf("Fallito. Codice errore: %ld", status);
